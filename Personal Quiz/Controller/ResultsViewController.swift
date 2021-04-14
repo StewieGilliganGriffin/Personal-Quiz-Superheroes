@@ -8,6 +8,11 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
-
-    @IBAction func unwindSegie(_sender: UIStoryboardSegue) {}
+    
+    //MARK: - IB Outlets
+    @IBOutlet var resultAnswerLabel: UILabel!
+    @IBOutlet var resultDefinitionLabel: UILabel!
+    
+    //MARK: - Public properties
+    var responses: [Answer]!
 }

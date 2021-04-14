@@ -96,18 +96,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsG-CD-SAF">
                                         <rect key="frame" x="117" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="kSh-dM-MZw" eventType="touchUpInside" id="Svy-JQ-F7H"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOG-tu-b7o">
                                         <rect key="frame" x="117" y="46" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="kSh-dM-MZw" eventType="touchUpInside" id="O8o-Hu-K2G"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V94-nX-Y8c">
                                         <rect key="frame" x="117" y="92" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="kSh-dM-MZw" eventType="touchUpInside" id="98A-vf-6O2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="siB-Mv-Qex">
                                         <rect key="frame" x="117" y="138" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="kSh-dM-MZw" eventType="touchUpInside" id="DjM-JT-ZkO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -174,6 +186,9 @@
                                         <rect key="frame" x="0.0" y="156" width="280" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Ответить"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="kSh-dM-MZw" eventType="touchUpInside" id="lwP-sK-1kN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -204,10 +219,13 @@
                                         <rect key="frame" x="0.0" y="118" width="280" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Ответить"/>
+                                        <connections>
+                                            <action selector="rangedAnswersButtonPressed" destination="kSh-dM-MZw" eventType="touchUpInside" id="YAy-tO-WzG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKD-nr-w4t">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="iKD-nr-w4t">
                                 <rect key="frame" x="20" y="111" width="280" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -238,13 +256,7 @@
                             <constraint firstItem="6Hz-M5-Ahv" firstAttribute="centerY" secondItem="z7b-1q-XRh" secondAttribute="centerY" constant="32" id="zSj-in-nab"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Вопрос №" id="XBO-7N-VZI">
-                        <barButtonItem key="rightBarButtonItem" title="3=&gt;" id="3RP-rW-yWD">
-                            <connections>
-                                <segue destination="MbN-1y-laW" kind="show" id="7ZG-Ed-oaX"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="XBO-7N-VZI"/>
                     <connections>
                         <outlet property="multipleStackView" destination="77W-FD-eN0" id="sX2-9H-oY4"/>
                         <outlet property="questionLabel" destination="iKD-nr-w4t" id="ZSX-Ho-aeT"/>
@@ -310,10 +322,14 @@
                     <navigationItem key="navigationItem" title="Результаты" id="cc1-BL-5xq">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="wpu-b1-S4e">
                             <connections>
-                                <segue destination="Iv6-8s-A7j" kind="unwind" unwindAction="unwindSegieWith_sender:" id="doq-Km-PzT"/>
+                                <segue destination="Iv6-8s-A7j" kind="unwind" unwindAction="unwindSegieWith_sender:" id="55q-wr-YUN"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="ue5-e1-lVd" id="Sax-c9-yZ3"/>
+                        <outlet property="resultDefinitionLabel" destination="T0d-eo-A4R" id="jHJ-kv-6PO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NnQ-wU-4G7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Iv6-8s-A7j" userLabel="Exit" sceneMemberID="exit"/>
@@ -340,9 +356,6 @@
             <point key="canvasLocation" x="755.625" y="75"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="018-TO-csM"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
