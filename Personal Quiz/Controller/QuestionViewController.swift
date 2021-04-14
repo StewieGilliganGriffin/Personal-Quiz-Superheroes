@@ -79,7 +79,7 @@ class QuestionViewController: UIViewController {
         questionLabel.text = currentQuestion.text
         
         //Calculate progress
-        let totalProgress = Float(questionIndex / questions.count)
+        let totalProgress = Float(questionIndex) / Float(questions.count)
         questionProgressView.setProgress(totalProgress, animated: true)
         
         //Set navigation title
@@ -142,7 +142,7 @@ class QuestionViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "resultSegue" else { return }
-        let resultVC = segue.description as! ResultsViewController
+        let resultVC = segue.destination as! ResultsViewController
         resultVC.responses = answersChoosen
     }
 }
