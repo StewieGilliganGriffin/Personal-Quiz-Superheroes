@@ -17,9 +17,9 @@ extension Question {
             Question(text: "Идеальный вечер - это",
                      type: .single,
                      answers: [
-                        Answer(text: "Вкусный ужин", type: .abu),
-                        Answer(text: "Посиделки с друзьями", type: .maga),
-                        Answer(text: "Крепкий сон", type: .muha),
+                        Answer(text: "Пюрешка с котлетками", type: .abu),
+                        Answer(text: "Абилити драфт", type: .maga),
+                        Answer(text: "Порубить дров и разобрать мотоцикл", type: .muha),
                         Answer(text: "Пробежка и 1000 отжиманий", type: .ras)
             ]),
             
@@ -28,8 +28,8 @@ extension Question {
                      answers: [
                         Answer(text: "Осман", type: .abu),
                         Answer(text: "Заур", type: .maga),
-                        Answer(text: "Рамзик", type: .muha),
-                        Answer(text: "Толстый Мага", type: .ras)
+                        Answer(text: "Видеокарта", type: .muha),
+                        Answer(text: "Писька дьявола", type: .ras)
             ]),
             
             Question(text: "Любите ли Вы подрочить?",
