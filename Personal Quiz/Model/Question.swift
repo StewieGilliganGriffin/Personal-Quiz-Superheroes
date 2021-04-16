@@ -14,31 +14,31 @@ struct Question {
 extension Question {
     static func getQuestions() -> [Question] {
         return [
-            Question(text: "Какую пищу Вы предпочитаете?",
+            Question(text: "Идеальный вечер - это",
                      type: .single,
                      answers: [
-                        Answer(text: "Стейк", type: .dog),
-                        Answer(text: "Рыба", type: .cat),
-                        Answer(text: "Морковь", type: .rabbit),
-                        Answer(text: "Кукуруза", type: .turtle)
+                        Answer(text: "Вкусный ужин", type: .abu),
+                        Answer(text: "Посиделки с друзьями", type: .maga),
+                        Answer(text: "Крепкий сон", type: .muha),
+                        Answer(text: "Пробежка и 1000 отжиманий", type: .ras)
             ]),
             
-            Question(text: "Что Вам нравится больше?",
+            Question(text: "Отметье Ваших самых близких друзей",
                      type: .multiple,
                      answers: [
-                        Answer(text: "Плавать", type: .dog),
-                        Answer(text: "Спать", type: .cat),
-                        Answer(text: "Обниматься", type: .rabbit),
-                        Answer(text: "Есть", type: .turtle)
+                        Answer(text: "Осман", type: .abu),
+                        Answer(text: "Заур", type: .maga),
+                        Answer(text: "Рамзик", type: .muha),
+                        Answer(text: "Толстый Мага", type: .ras)
             ]),
             
-            Question(text: "Любите ли Вы поездки?",
+            Question(text: "Любите ли Вы подрочить?",
                      type: .ranged,
                      answers: [
-                        Answer(text: "Ненавижу", type: .dog),
-                        Answer(text: "Нервничаю", type: .cat),
-                        Answer(text: "Не замечаю", type: .rabbit),
-                        Answer(text: "Обожаю", type: .turtle)
+                        Answer(text: "Иногда", type: .ras),
+                        Answer(text: "Нервничаю", type: .maga),
+                        Answer(text: "Не замечаю", type: .muha),
+                        Answer(text: "Дрочу сейчас", type: .abu)
             ])
         ]
     }

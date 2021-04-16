@@ -13,6 +13,8 @@ class ResultsViewController: UIViewController {
     @IBOutlet var resultAnswerLabel: UILabel!
     @IBOutlet var resultDefinitionLabel: UILabel!
     
+    @IBOutlet var resultImage: UIImageView!
+    
     //MARK: - Public properties
     var responses: [Answer]!
     
@@ -39,8 +41,9 @@ class ResultsViewController: UIViewController {
     }
     
     private func updateUI(with animal: AnimalType) {
-        resultAnswerLabel.text = "Вы - \(animal.rawValue)"
+        resultAnswerLabel.text = "Вы - \(animal.text)"
         resultDefinitionLabel.text = "\(animal.difinition)"
+        resultImage.image = animal.image
     }
 }
 
