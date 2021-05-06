@@ -14,31 +14,31 @@ struct Question {
 extension Question {
     static func getQuestions() -> [Question] {
         return [
-            Question(text: "Идеальный вечер - это",
+            Question(text: "Почемы ты стал супергероем?",
                      type: .single,
                      answers: [
-                        Answer(text: "Пюрешка с котлетками", type: .abu),
-                        Answer(text: "Абилити драфт", type: .maga),
-                        Answer(text: "Порубить дров и разобрать мотоцикл", type: .muha),
-                        Answer(text: "Пробежка и 1000 отжиманий", type: .ras)
+                        Answer(text: "Этому городу нужен герой", type: .batman),
+                        Answer(text: "Я им родился", type: .superman),
+                        Answer(text: "Это случайность", type: .spiderman),
+                        Answer(text: "У меня много денег и мне скучно", type: .ironman)
             ]),
             
-            Question(text: "Отметье Ваших самых близких друзей",
+            Question(text: "Выбери свое оружие",
                      type: .multiple,
                      answers: [
-                        Answer(text: "Осман", type: .abu),
-                        Answer(text: "Заур", type: .maga),
-                        Answer(text: "Видеокарта", type: .muha),
-                        Answer(text: "Писька дьявола", type: .ras)
+                        Answer(text: "Неожиданность", type: .batman),
+                        Answer(text: "Суперсила", type: .superman),
+                        Answer(text: "Ловкось", type: .spiderman),
+                        Answer(text: "Технологии", type: .ironman)
             ]),
             
-            Question(text: "Любите ли Вы подрочить?",
+            Question(text: "Насколько тебе нужно одобрение окружающих?",
                      type: .ranged,
                      answers: [
-                        Answer(text: "Иногда", type: .ras),
-                        Answer(text: "Нервничаю", type: .maga),
-                        Answer(text: "Не замечаю", type: .muha),
-                        Answer(text: "Дрочу сейчас", type: .abu)
+                        Answer(text: "Вообще не нужно", type: .batman),
+                        Answer(text: "Иногда нужно", type: .spiderman),
+                        Answer(text: "Всегда нужно", type: .superman),
+                        Answer(text: "Нуждаюсь постоянно", type: .ironman)
             ])
         ]
     }

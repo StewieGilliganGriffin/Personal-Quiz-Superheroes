@@ -25,7 +25,7 @@ class ResultsViewController: UIViewController {
     }
     
     private func updateResult() {
-        var frequencyOfAnimals: [AnimalType: Int] = [:]
+        var frequencyOfAnimals: [HeroType: Int] = [:]
         let animals = responses.map { $0.type }
         
         for animal in animals {
@@ -40,7 +40,7 @@ class ResultsViewController: UIViewController {
         
     }
     
-    private func updateUI(with animal: AnimalType) {
+    private func updateUI(with animal: HeroType) {
         resultAnswerLabel.text = "Вы - \(animal.text)"
         resultDefinitionLabel.text = "\(animal.difinition)"
         resultImage.image = animal.image
